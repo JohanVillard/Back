@@ -18,9 +18,9 @@ const sequelize_1 = require("sequelize");
 const router = (0, express_1.Router)();
 /**
  * @swagger
- * /api/v1/blagues:
+ * /blagues:
  *   post:
- *     description: Créer une nouvelle blague
+ *     summary: Créer une nouvelle blague
  *     requestBody:
  *       required: true
  *       content:
@@ -28,13 +28,17 @@ const router = (0, express_1.Router)();
  *           schema:
  *             type: object
  *             required:
- *							 - question
- *							 - response
+ *               - question
+ *               - response
  *             properties:
  *               question:
  *                 type: string
+ *                 description: La devinette
+ *                 example: "Pourquoi les plongeurs plongent-ils toujours en arrière et jamais en avant ?"
  *               response:
  *                 type: string
+ *                 description: La réponse
+ *                 example: "Parce que sinon ils tombent encore dans le bateau !"
  *     responses:
  *       201:
  *         description: Blague créée
