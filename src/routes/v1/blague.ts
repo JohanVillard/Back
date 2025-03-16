@@ -1,6 +1,5 @@
 import { Request, Response, Router } from "express";
 import Blague from "../../models/Blague";
-import getRandomInt from "../../utils/getRandomInt";
 import { Sequelize } from "sequelize";
 
 const router = Router();
@@ -16,6 +15,9 @@ const router = Router();
  *         application/json:
  *           schema:
  *             type: object
+ *             required:
+ *							 - question
+ *							 - response
  *             properties:
  *               question:
  *                 type: string
