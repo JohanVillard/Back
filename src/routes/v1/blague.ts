@@ -8,7 +8,7 @@ const router = Router();
  * @swagger
  * /blagues:
  *   post:
- *     summary: Créer une nouvelle blague
+ *     description: Créer une nouvelle blague
  *     requestBody:
  *       required: true
  *       content:
